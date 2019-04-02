@@ -50,7 +50,7 @@ plt.show(block=True)
 
 
 
-t=np.linspace(0,10,1000)
+t=np.linspace(0,2,1000)
 h=t[1]-t[0]
 sol1=np.zeros(len(t))
 sol2=np.zeros(len(t))
@@ -65,7 +65,7 @@ sol3[0]=0.1
 for i in range(0,len(t)-1):
 	sol1[i+1]=sol1[i]+h*f(sol1[i])
 	sol2[i+1]=sol2[i]+h*f(sol2[i])
-#	sol3[i+1]=sol3[i]+h*f(sol3[i])
+	sol3[i+1]=sol3[i]+h*f(sol3[i])
 #	sol4[i+1]=sol4[i]+h*f(sol4[i])
 
 
